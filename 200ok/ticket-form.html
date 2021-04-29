@@ -45,11 +45,21 @@
          margin-bottom: 1rem;
          text-align: center;
        }
-       .neoncrm-field-text {
+       .sfp-bold-label {
+         font-family: 'Spartan', sans-serif;
+         text-transform: uppercase;
+         color: #FFFFFF !important;
+       }
+       .neoncrm-field-text, #pShoppingCartFormBean {
          text-align: left;
          max-width: 350px;
          margin: 0 auto;
        }
+
+       /* #pShoppingCartFormBean {
+         margin-top: 2rem;
+       } */
+
        .neoncrm-org-toggle {
          display: block;
          background: #F27E5B;
@@ -88,15 +98,16 @@
          background: none;
          border: none;
        }
-       .neoncrm-content select {
+       .neoncrm-content select, .neoncrm-select {
          height: 2rem;
          line-height: 2rem;
        }
-       .neoncrm-content input, .neoncrm-content select {
+       .neoncrm-content input, .neoncrm-content select, .neoncrm-select, .neoncrm-text-field {
          color: #000;
          max-width: 100%;
          width: 100%;
        }
+       .neoncrm-text-field, 
        .neoncrm-content input[type="text"] {
          padding: 0.5rem;
        }
@@ -177,7 +188,42 @@
        }
       .paymentFieldset {
           background-color: inherit !important;
+          padding: 0;
       }
+      .sfp-payment-radio img {
+    display: inline-block;
+    }
+    .sfp-payment-radio {
+    display: inline-block;
+    margin: 0 1em 0 0 !important;
+    }
+    .neoncrm-text-field ~ a {
+      display: inline-block;
+    }
+    .paymentFieldset {
+      padding: 0;
+      max-width: 350px;
+      margin: 0 auto 2rem;
+    }
+    .sfp-payment-arrow {
+      display: none;
+    }
+
+    #paypal-payment img {
+      width: 200px;
+      height: auto;
+      margin: 2rem auto 1rem;
+      
+    }
+
+    .e-check-text {
+      margin-bottom: 2rem !important;
+    }
+
+    #neonpayCardField {
+      width: 100% !important;
+    }
+
   </style>
 
   <link rel="stylesheet" type="text/css" href="https://css.tito.io/v1.1">
