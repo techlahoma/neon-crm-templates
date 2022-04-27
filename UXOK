@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>200 OK - Tulsa’s Web Developer Conference</title>
+  <meta name="description" content>
+  <link rel="icon" href="/assets/media/favicon/favicon.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type="text/css">
+  <!--  <link href="/assets/fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/assets/fonts/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/assets/fonts/fontawesome/css/solid.css" rel="stylesheet">
+  <link href="/assets/css/tailwind-1.1.4.min.css" rel="stylesheet"> -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+ 
+      html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+       body {
+       background: #4D2462;
+       font-family: 'Spartan', sans-serif;
+       color: #FFFFFF;
+       }
+       .wrapper {
+       max-width: 960px;
+       margin: 0 auto;
+       }
+       .u-text-orange {
+       color: #F27E5B;
+       }
+       .neoncrm-page-title {
+         font-family: 'Spartan', sans-serif;
+         text-transform: uppercase;
+         font-weight: bold;
+         font-size: 1.5rem;
+         margin-bottom: 1rem;
+         text-align: center;
+       }
+       .sfp-bold-label {
+         font-family: 'Spartan', sans-serif;
+         text-transform: uppercase;
+         color: #FFFFFF !important;
+       }
+       .neoncrm-field-text, #pShoppingCartFormBean {
+         text-align: left;
+         max-width: 350px;
+         margin: 0 auto;
+       }
+
+       /* #pShoppingCartFormBean {
+         margin-top: 2rem;
+       } */
+
+       .neoncrm-org-toggle {
+         display: block;
+         background: #F27E5B;
+         padding: 0.75rem 1rem 0.5rem;
+         color: #4D2462;
+         text-align: center!important;
+         margin: 0 auto 1rem;
+         cursor: pointer;
+         transition: background 0.2s ease-out;
+         max-width: 250px;
+       }
+       .neoncrm-org-toggle:empty {
+         display: none;
+       }
+       .neoncrm-org-toggle:hover {
+         background: #F2977C;
+         cursor: pointer;
+       }
+       .neoncrm-button {
+         background: #F27E5B;
+         padding: 0.75rem 1rem 0.5rem;
+         color: #4D2462;
+         text-align: center;
+         margin: 0 auto 1rem;
+         display: block;
+         width: 350px;
+         max-width: 100%;
+         font-weight: bold;
+         cursor: pointer;
+         transition: background 0.2s ease-out;
+       }
+       .neoncrm-button:hover {
+         background: #F2977C;
+       }
+       .neoncrm-org-toggle input {
+         background: none;
+         border: none;
+       }
+       .neoncrm-content select, .neoncrm-select {
+         height: 2rem;
+         line-height: 2rem;
+       }
+       .neoncrm-content input, .neoncrm-content select, .neoncrm-select, .neoncrm-text-field {
+         color: #000;
+         max-width: 100%;
+         width: 100%;
+       }
+       .neoncrm-text-field, 
+       .neoncrm-content input[type="text"] {
+         padding: 0.5rem;
+       }
+       .neoncrm-field-label {
+         font-weight: bold;
+         font-size: 0.9rem;
+         text-transform: uppercase;
+         margin-top: 2rem !important;
+         margin: 2rem 0 0.5rem;
+       }
+       .neoncrm-eventReg-waiver, .neoncrm-content {
+         padding: 0 0 2rem;
+       }
+       .neoncrm-eventReg-waiver a {
+         text-decoration: underline;
+       }
+       .neoncrm-content, .neoncrm-eventReg-waiver {
+         max-width: 350px;
+         margin: 0 auto;
+         text-align: left;
+       }
+       #attendeeHelp {
+         max-width: 350px;
+         margin: 0 auto;
+       }
+       .neoncrm-page-subtitle + p, .neoncrm-event-additionalDonation, form > .neoncrm-page-subtitle, .neoncrm-page-title + p {
+         margin-bottom: 2rem;
+       }
+       .neoncrm-eventReg-waiver p {
+         line-height: 1.5rem;
+       }
+       .neoncrm-page-subtitle {
+           text-align: center;
+         font-weight: bold;
+       }
+       .neoncrm-event-admission {
+         line-height: 1.5rem;
+               text-align: center;
+             width: auto;
+       }
+       .neoncrm-event-name {
+         display: none;
+       }
+       .neoncrm-radio-button {
+         display: flex;
+         align-items: flex-start;
+         margin-bottom: 1rem;
+       }
+       .neoncrm-radio-button input {
+         margin-right: 1rem;
+         width: auto;
+       }
+       .neoncrm-form-buttons {
+         display: flex;
+         justify-content: center;
+       }
+       .neoncrm-form-buttons .neoncrm-button {
+         width: auto;
+       }
+       .neoncrm-event-additionalDonation .neon-radio-button {
+         display: inline-block;
+         background: #F27E5B;
+         padding: 0.75rem 1.5rem 0.5rem;
+         color: #4D2462;
+         text-align: center!important;
+         margin: 0 0 1rem;
+         cursor: pointer;
+         text-align: center;
+         min-width: 100px;
+         transition: background 0.2s ease-out;
+       }
+       .neoncrm-event-additionalDonation .neon-radio-button:hover {
+         background: #F2977C;
+       }
+       #attendeeTable legend span {
+         font-weight: bold;
+         font-size: 1.2rem;
+       }
+      .neoncrm-field-label + .neoncrm-section-header {
+         margin-top: 1rem !important;
+       }
+      .paymentFieldset {
+          background-color: inherit !important;
+          padding: 0;
+      }
+      .sfp-payment-radio img {
+    display: inline-block;
+    }
+    .sfp-payment-radio {
+    display: inline-block;
+    margin: 0 1em 0 0 !important;
+    }
+    .neoncrm-text-field ~ a {
+      display: inline-block;
+    }
+    .paymentFieldset {
+      padding: 0;
+      max-width: 350px;
+      margin: 0 auto 2rem;
+    }
+    .sfp-payment-arrow {
+      display: none;
+    }
+
+    #paypal-payment img {
+      width: 200px;
+      height: auto;
+      margin: 2rem auto 1rem;
+      
+    }
+
+    .e-check-text {
+      margin-bottom: 2rem !important;
+    }
+
+    #neonpayCardField {
+      width: 100% !important;
+    }
+
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="https://css.tito.io/v1.1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <script src="https://js.tito.io/v1" async></script>
+</head>
+   <body class="; " data-new-gr-c-s-check-loaded="8.872.0" data-gr-ext-installed="">
+      <div class="; container mx-auto p-8 px-4 md:p-8 leading-tight" style="">
+      <div class="text-center">
+      <a href="/" class="block my-12 md:mx-12">
+      <img src="https://techlahoma.github.io/neon-crm-templates/200ok/assets/200ok-white.svg" alt="200OK - Tulsa's Web Developer Conference" class="max-w-sm w-full block mx-auto">
+      </a>
+      <h1 class="text-lg md:text-2xl font-bold m-4 max-w-sm mx-auto" style="color: #eee;">
+      Tulsa's Web Developer <span class="u-text-orange">Virtual</span>&nbsp;Conference</h1>
+      <div class="text-lg md:text-2xl font-bold m-4" style="color: #aaa;">
+         Friday, May 20 2022</div>
+         <div class="header-social-icons ; text-4xl my-4">
+            <a href="slack://channel?id=200ok&amp;team=techlahoma" title="#200ok Slack Channel on Techlahoma" class="; inline-block py-2 px-4"><i class="fab fa-slack"></i></a>
+            <a href="https://twitter.com/200okconf" title="@200okconf Twitter" class="; inline-block py-2 px-4"><i class="fab fa-twitter"></i></a>
+         </div>
+      </div>
+
+<div class="wrapper">
+<<content>>
+</div>
+
+
+
+    <div class="text-center">
+  <hr class="my-8">
+
+  <p>Copyright 2022 — <a href="https://www.techlahoma.org/" style="color:#999;">Techlahoma</a></p>
+  
+  
+</div>
+</body>
+</html>
